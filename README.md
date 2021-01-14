@@ -14,11 +14,11 @@ RisingSun requires two files as input. The first must contain a comma-separated 
 Thus, the file containing host information should have the following format:
 
 `
-AF:AF:AF:AF:AF:AF,lab.internal.corp, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,solarwinds-01
-BF:BF:BF:BF:BF:BF,lab.internal.corp, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,solarwinds-02
+AF:AF:AF:AF:AF:AF,lab.internal.corp,xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,solarwinds-01
+BF:BF:BF:BF:BF:BF,lab.internal.corp,xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx,solarwinds-02
 `
 
-The second input file is simply a list of C2 domains, ideally those attribute to your organization.
+The second input file is simply a list of C2 domains, ideally those attributed to your organization.
 
 RisingSun will output the results to a CSV file named "results.csv", as well as display any matches in the terminal.
 
