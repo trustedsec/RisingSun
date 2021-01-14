@@ -1,6 +1,6 @@
 # RisingSun
 
-RisingSun is a SUNBURST C2 decoder and Host ID encoder which can be used to attribute C2 domains to specific SolarWinds servers when network telemetry is unavailable. Our intent is to provide organizations without DNS logs (or other network-based logs) an option for validating the scope of compromise by the SolarWinds Orion backdoor. Use this tool if you:
+[RisingSun](https://www.trustedsec.com/blog/risingsun-decoding-sunburst-c2-to-identify-infected-hosts-without-network-telemetry/) is a SUNBURST C2 decoder and Host ID encoder which can be used to attribute C2 domains to specific SolarWinds servers when network telemetry is unavailable. Our intent is to provide organizations without DNS logs (or other network-based logs) an option for validating the scope of compromise by the SolarWinds Orion backdoor. Use this tool if you:
 - Have received a list of C2 domains from a major vendor claiming they originated from your network
 - Lack the requisite network telemetry (DNS logs, HTTP logs, etc) to identify which hosts communicated with each C2 domain 
 - Still have the compromised SolarWinds Orion servers (or backups) available 
