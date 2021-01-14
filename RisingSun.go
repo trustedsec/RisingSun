@@ -1,6 +1,6 @@
 // Author: @lo0pback (TrustedSec IR team)
 // Thanks:
-// 	https://github.com/RedDrip7/SunBurst_DGA_Decode
+//  https://github.com/RedDrip7/SunBurst_DGA_Decode
 //  https://blog.truesec.com/2020/12/17/the-solarwinds-orion-sunburst-supply-chain-attack/
 //  https://www.netresec.com/?page=Blog&month=2020-12&post=Reassembling-Victim-Domain-Fragments-from-SUNBURST-DNS
 //  https://securelist.com/sunburst-connecting-the-dots-in-the-dns-requests/99862/
@@ -21,7 +21,7 @@ import (
 )
 
 func decryptSecureString(secureString string) (decodedBytes []byte) {
-	decodedBytes = base32Decode(secureString)
+    decodedBytes = base32Decode(secureString)
     hash64 := make([]byte,len(decodedBytes)-1)
     xorKey := decodedBytes[0]
     for i := 0; i < len(hash64); i++ {
@@ -132,8 +132,8 @@ func main() {
 	// Check for sufficient args
 	if len(os.Args) < 2 {
 		log.Println("[-] Not enough arguments provided.")
-		log.Println("\tUsage: decoder <host info file> <domains file>")
-		log.Println("\tExample: decoder ./hosts.txt ./domains.txt")
+		log.Println("\tUsage: RisingSun <host info file> <domains file>")
+		log.Println("\tExample: RisingSun ./hosts.txt ./domains.txt")
 		return
 	}
 	// Assign args to friendly variables
